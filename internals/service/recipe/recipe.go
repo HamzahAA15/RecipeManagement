@@ -74,8 +74,8 @@ func (s *recipeService) UpdateRecipeByID(ctx context.Context, request request.Re
 	user := ctx.Value("username").(string)
 	recipe := models.Recipe{
 		ID:          request.ID,
-		Title:       request.Title,
-		Category:    request.Category,
+		Title:       strings.ToUpper(request.Title),
+		Category:    strings.ToUpper(request.Category),
 		Ingredients: request.Ingredients,
 		Procedures:  request.Procedures,
 		ImageURL:    request.ImageURL,
