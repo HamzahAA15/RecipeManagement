@@ -79,6 +79,7 @@ func (s *recipeService) UpdateRecipeByID(ctx context.Context, request request.Re
 		Ingredients: request.Ingredients,
 		Procedures:  request.Procedures,
 		ImageURL:    request.ImageURL,
+		Comments:    []string{},
 		UpdatedAt:   time.Now().UTC(),
 	}
 
