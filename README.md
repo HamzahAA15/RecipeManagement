@@ -26,6 +26,8 @@ Run the following command:
 ```bash
 docker-compose build
 docker-compose up
+
+accesss through `http://localhost:8080/`
 ```
 
 import the JSON collection of request from the attachment of email into API platform such as Postman
